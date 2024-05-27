@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativiade4</title>
+</head>
+<body>
+    <script>
+function validar()
+{
+    if(document.cadastro.nome.value =="" )
+    { window.alerte("você deve preencher o campo nome.");
+    document.cadastro.nome.focus();
+    return false;
+    }
+    if (document.cadastro.observaçoes.value =="")
+    { window.alert("você deve colocar uma observação");
+    document.cadastro.observaçoes.focus();
+    return false;
+    }
+}
+   </script>
+<INPUT type="submit" value="Enviar os dados" onclick="validar();">
+</body>
+</html>
